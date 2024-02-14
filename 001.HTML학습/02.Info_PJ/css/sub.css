@@ -9,7 +9,7 @@
 */
 
 /*  서브페이지 타이틀 */
-h2.sub-title{
+h2.sub-title {
     /* 글자색 : C */
     color: #2ebb4a;
     /* color: rgb(8 177 11 / 0.626) */
@@ -65,9 +65,27 @@ h2.sub-title{
    잡아야 이미지가 나온다!!! */
 }
 /* 정치 */
-.politics{
+.politics {
     /* 배경이미지 :bgi-> 개별적으로줌! */
     background-image: url(../images/titbg1.jpg);
-
-    
+}
+/* 경제 */
+.economics {
+    /* 배경이미지 :bgi-> 개별적으로줌! */
+    background-image: url(../images/titbg2.jpg);
+}
+/* 사회 */
+.social {
+    /* 배경이미지 :bgi-> 개별적으로줌! */
+    background-image: url(../images/titbg3.jpg);
+}
+/* IT/과학 */
+.IT {
+    /* 배경이미지 :bgi-> 개별적으로줌! */
+    background-image: url(../images/titbg4.jpg);
+}
+/* TV/연예 */
+.TV {
+    /* 배경이미지 : bgi-> 개별적으로줌! */
+    background-image: url(../images/titbg5.jpg);
 }
