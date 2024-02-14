@@ -1,3 +1,8 @@
+@charset "Utf-8";
+/* 맨위에 Utf-8 인코딩 설정 필수!
+-외부css파일은 파일 자체적으로 처리되므로 
+인코딩 형식도 따로 지정해야한다! */
+
 /* Info PJ 서브페이지용 Css- sub.css */
 /* 공통 외부 CSS 불러오기 */
 @import url(./common.css);
@@ -8,6 +13,10 @@
     html의 랜더링 속도가 향상된다!
 */
 
+/*  서브 페이지 글씨체 지정하기 */
+#main-area {
+    font-family: "Noto Sans KR", sans-serif;
+}
 /*  서브페이지 타이틀 */
 h2.sub-title {
     /* 글자색 : C */
@@ -73,33 +82,83 @@ h2.sub-title {
 }
 /* 경제 */
 .economics {
-        /* 글자색 */
-        color: #2196f3;
+    /* 글자색 */
+    color: #2196f3;
 
     /* 배경이미지 :bgi-> 개별적으로줌! */
     background-image: url(../images/titbg2.jpg);
 }
 /* 사회 */
 .social {
-        /* 글자색 */
-        color: #9aa5aa;
+    /* 글자색 */
+    color: #9aa5aa;
 
     /* 배경이미지 :bgi-> 개별적으로줌! */
     background-image: url(../images/titbg3.jpg);
 }
 /* IT/과학 */
 .IT {
-        /* 글자색 */
-        color: #002696;
+    /* 글자색 */
+    color: #002696;
 
     /* 배경이미지 :bgi-> 개별적으로줌! */
     background-image: url(../images/titbg4.jpg);
 }
 /* TV/연예 */
 .TV {
-        /* 글자색 */
-        color: #e91e63;
+    /* 글자색 */
+    color: #8b1b1b;
 
     /* 배경이미지 : bgi-> 개별적으로줌! */
     background-image: url(../images/titbg5.jpg);
 }
+
+/* 언론사 로고 */
+.press-logo img {
+    height: 32px;
+    /* 이미지는 가로/세로중
+    하나만 주면 비율을 유지하여
+    변경된다! */
+}
+/* 기사 타이틀 */
+.article-title {
+    font-size: 30px;
+    color: #111;
+}
+
+/* 기사 이미지 박스 */
+.article-picture {
+    margin: 20px 0;
+}
+/* 기사 이미지 */
+.article-picture img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+ /* 기사 이미지 설명 */
+.article-picture figcaption { 
+    text-align: center;
+    /* tac - 글자중앙정렬 */
+    padding: 0 5px;
+}
+/* 기사 이미지 설명 글자크기변경 */
+.article-picture figcaption small {
+    font-size: 15px;
+    /* small에 글자크기가 지정되어 있으므로 
+    여기에서 글자크기를 변경해야 반영된다! */
+}
+
+/* 기사내용 */
+.contents p{
+    /* 글자크기 */
+    font-size: 17px;
+    /* 줄간격 : lh
+        linke-height 줄간격은 글자의 중앙에서
+        위아래 높이값을 말하며 글자는 중앙에 흐른다. 
+        단위는 없을 경우 글자크기의 배수로 셋팅됨
+        */
+    line-height: 1.56;
+    /* 글자색 */
+    color: #333;
+}
+

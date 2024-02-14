@@ -1,3 +1,5 @@
+@charset "Utf-8";
+/* 맨위에 Utf-8 인코딩 설정 필수! */
 /* Info PJ 공통 Css- common.css */
 /* 웹폰트 구글CDN(Content Delivery Network) */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Bagel+Fat+One&family=Diphylleia&family=Orbit&display=swap");
@@ -109,7 +111,12 @@ footer.part {
 
 /* 타이틀 */
 .tit {
+    font-size: 45px;
     font-family: "Diphylleia", serif;
+    color: darkblue;
+    text-shadow: 2px 2px 2px #99a;
+    margin: 0px;
+    margin-bottom: 34px;
 }
 /* 메뉴 */
 .menu {
