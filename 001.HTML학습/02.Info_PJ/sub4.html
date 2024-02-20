@@ -179,6 +179,142 @@
                 <여는꺽쇠 &lt; (lt는 less than ~ 보다 작은)
                 >닫는꺽쇠 &gt; (gt는 greater than ~ 보다 큰)
              -->
+             <!-- 
+                반대방향부터 출력하기
+                <bdo dir-"rtl">  </bdr>
+              -->
+              <!-- 
+                [순서 없는 리스트: ul]
+                unordered list
+                (참고: 불릿옵션 https://www.w3schools.com/tags/t
+                ryit.asp?filename=tryhtml_ul_type_css)
+
+                [순서있는 리스트: ol]
+                ordered list
+                (참고: 순서표시옵션 https://www.w3schools.com/tags/tryi
+                t.asp?filename=tryhtml_ol_type_all_css )
+
+                [ul/ol 공통사항]
+                - 하위 필수 요소 :li(개별리스트)
+                -주의: 하위에 li 이외의 블록요소나
+                그 어떤 요소도 직계자식으로 사용할 수 없다!
+                예)<ul><li></li><div></div></ul> -> 사용불가!
+
+               -->
+
+               <!-- 주요뉴스 :ul -->
+               <article class="main-news news-box">
+                <h3>주요뉴스</h3>
+                <!-- <ul style="list-style-type: square;> -->
+                 <ul>
+                    <li>
+                        <a href="https://n.news.naver.com/article/052/0001999667?type=main" target="_blank">[현장영상+] "의협, 정부 요청에 '겁박'...생명 다루는 의사 자세 아냐"</a>
+                    </li>
+                    <li>
+                        <a href="https://n.news.naver.com/article/052/0001999647?type=main" target="_blank">"의사들이 집단행동으로 인력 확대 가로막는 나라는 한국 뿐"</a>
+                    </li>
+                    <li>
+                        <a href="https://n.news.naver.com/article/052/0001999593?type=main" target="_blank">방화 추정 불로 20대 남성 숨져...대형 화재 잇따라</a>
+                    </li>
+                </ul>
+               </article>
+               <!--  랭킹뉴스: ol -->
+               <article class="rank-news news-box">
+                <h3>랭킹뉴스</h3>
+                <!--ol style="list-style-type: upper-roman; " start="3" reversed-->
+                    <!-- ol은 start로 시작번호 지정옵션, reversed를 주념 역순으로 순서를 보여준다! -->
+                     <ol> 
+
+                    <li>
+                        <a href="https://n.news.naver.com/article/052/0001999608?ntype=RANKING " target="_blank">1.조희연, 손흥민·이강인 갈등 언급 "화해·회복하는 과정 중요</a>
+                    </li>
+                    <li>
+                        <a href=" https://n.news.naver.com/article/052/0001999600?ntype=RANKING" target="_blank">2.bhc, '반값' 브라질산 닭고기로 바꾸더니...메뉴 가격 인상"</a>
+                    </li>
+                    <li>
+                        <a href="https://n.news.naver.com/article/052/0001999570?ntype=RANKING" target="_blank">3.[오만정] 정성호 "내가 이재명의 최순실?"…한동훈보다 지지율이 낮은 이유</a>
+                    </li>
+                </ol>
+               </article>
+
+               <!-- 
+                [ 용어정의리스트 : dl]
+                dl > dt > + dd
+                ______________________
+                dl: 용어 리스트
+                (defines th descpription list)
+                dt: 용어 정의
+                (defines the term)
+                dd: 용어설명
+                (description each term)
+                _____________________
+                주의 - dl은 반드시 자식요소로 dt와 dd가 
+                반드시 한번이상 사용되어야 함!!!
+                또 주의 - dt 와 dd는 형제관계임!(자식아님!)
+                -->
+                <!-- 분야별 뉴스: dl -->
+                <article class="sec-news news-box">
+                    <h3>분야별뉴스</h3>
+                    <dl>
+                        <!-- 경제파트
+                         -->
+                        <dt>경제</dt>
+                        <dd>
+                            <a href="https://n.news.naver.com/mnews/article/001/0014512117" target="_blank">아파트만 집인가…주택 인허가 10채 중 9채가 아파트</a>
+                        </dd>
+                        <dd>
+                            <a href="https://n.news.naver.com/mnews/article/011/0004301322" target="_blank">손흥민에 웃은 '메가커피'…이강인에 눈물 '아라치 치킨'</a>
+                        </dd>
+
+                    <!-- 사회파트 --> 
+                    <dt>사회</dt>
+                        <dd>
+                            <a href="https://n.news.naver.com/mnews/article/001/0014513264" target="_blank">병원협회, 의료현안 상황대응위원회 구성…"필수의료 유지"</a>
+                        </dd>
+                        <dd>
+                            <a href="https://n.news.naver.com/mnews/article/001/0014512467" target="_blank">전남도, 해빙기 재난취약 시설물 안전 강화</a>
+                        </dd>  
+                        
+                        <!-- TV/연예파트  -->
+
+                    <dt>TV/연예</dt>
+                    <dd>
+                        <a href="https://entertain.naver.com/read?oid=241&aid=0003330621" target="_blank">르세라핌 “‘이지’, 내면 집중해 새로운 시도…첫 소절 듣고 ‘됐다’ 생각”</a>
+                    </dd>
+                    <dd>
+                        <a href="https://entertain.naver.com/read?oid=311&aid=0001693473" target="_blank">단독] 고준, 美서 화가 데뷔..."지쳐있던 나, 돌봐야겠단 생각" (인터뷰①)</a>
+                    </dd>  
+
+                    </dl>
+                </article>
+                <!-- 
+                    [테이블 요소 : table]
+                    table> tbody>tr>td
+                    -tbody는 안쓰고 tr부터 구현해도
+                    브라우저가 자동으로 그려준다!
+                    주의) table > trㄹ 직계선택하게 되면
+                    위와 같은 구조적인 이유로 선택되지 않는다!
+
+                    ________________________________
+                    ((간단한 테이블 작성시 필수요소 3가지!))
+                    table : 테이블 박스 부모요소
+                    tr : 테이블 행요소(table row)
+                    td : 테이블 데이터요소(table data)
+                  --> 
+
+                  <!-- 사진 뉴스: table -->
+                  <article class="photo-news news-box">
+                    <h3> 사진뉴스</h3>
+                    <!-- 3행3열 테이블 구성하기 -->
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                  </article>
+
+             
 
 
         </main>
